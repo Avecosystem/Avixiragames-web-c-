@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 10% 4%;
+  --foreground: 0 0% 98%;
+  --card: 220 10% 4%;
+  --card-foreground: 0 0% 98%;
+  --popover: 220 10% 4%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 195 100% 50%;
+  --primary-foreground: 220 10% 4%;
+  --secondary: 220 10% 10%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 220 10% 10%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 262 83% 58%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 220 10% 15%;
+  --input: 220 10% 15%;
+  --ring: 195 100% 50%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-space-black text-white font-sans;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(255, 0, 64, 0.02) 0%, transparent 50%);
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-charcoal-gray;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-electric-blue rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-vibrant-purple;
+  }
+}
+
+@layer components {
+  .cyber-button {
+    @apply relative px-8 py-3 bg-transparent border border-electric-blue text-electric-blue font-semibold uppercase tracking-wider transition-all duration-300 overflow-hidden;
+  }
+  
+  .cyber-button::before {
+    content: '';
+    @apply absolute inset-0 bg-electric-blue transform -translate-x-full transition-transform duration-300;
+    z-index: -1;
+  }
+  
+  .cyber-button:hover::before {
+    @apply translate-x-0;
+  }
+  
+  .cyber-button:hover {
+    @apply text-space-black shadow-neon-blue;
+  }
+
+  .game-card {
+    @apply relative bg-gradient-to-br from-charcoal-gray to-space-black border border-gray-800 rounded-lg overflow-hidden transition-all duration-300 hover:border-electric-blue hover:shadow-neon-blue hover:-translate-y-2;
+  }
+
+  .game-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-electric-blue/5 to-vibrant-purple/5 opacity-0 transition-opacity duration-300;
+  }
+
+  .game-card:hover::before {
+    @apply opacity-100;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-6xl font-display font-bold bg-gradient-to-r from-electric-blue via-white to-vibrant-purple bg-clip-text text-transparent;
+  }
+
+  .neon-text {
+    @apply text-electric-blue drop-shadow-[0_0_10px_rgba(0,212,255,0.5)] animate-pulse-neon;
+  }
+}
+
+@layer utilities {
+  .text-shadow-neon {
+    text-shadow: 0 0 10px currentColor;
+  }
+
+  .backdrop-blur-cyber {
+    backdrop-filter: blur(10px) saturate(180%);
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+}
+
+/* Particle animation */
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(0, 212, 255, 0.5);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Hide Next.js badge and error messages */
+body > nextjs-portal {
+  display: none;
+}
