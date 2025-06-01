@@ -6,6 +6,8 @@
 
 **Avxira Games** is a pioneering Web3 game studio under the umbrella of [Babe Finance & AI](https://babefinance.live), proudly part of the **[AV ECOSYSTEM](https://twitter.com/AvEcosystem)**. We build immersive blockchain-powered gaming experiences where players earn, own, and thrive through gameplay.
 
+## Avixra Games website (Demo & Future Concept) : https://macaly-wf9i6qxq00yy9k9k1z71pwoo.macaly-app.com/
+
 ---
 
 ## 🌐 Part of the AV ECOSYSTEM
