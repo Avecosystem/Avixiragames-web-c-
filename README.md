@@ -1,7 +1,7 @@
 <p align="center">
   <img src="avixiragames.png"/>
 </p> 
----------------
+
 # 🎮 Avxira Games
 
 Welcome to **Avxira Games**, a proud division of the [AV Ecosystem](https://twitter.com/AvEcosystem) under [Babe Finance & AI](https://babefinance.live). We specialize in creating immersive, blockchain-integrated gaming experiences that merge entertainment with decentralized finance (GameFi).
