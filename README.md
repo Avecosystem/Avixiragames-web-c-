@@ -16,8 +16,8 @@ Projects under the AV ECOSYSTEM include:
 
 - 🔗 [Babe Finance & AI](https://babefinance.live) — DeFi meets AI  
 - 👕 BABE Clothes — Luxury fashion meets tech  
-- 🧠 BABEAI (RARE) — Next-gen artificial intelligence  
-- 🐝 BeeCat (BCT Coin) — Community-driven crypto  
+- 🧠 BABEAI (Veronica) — Next-gen artificial intelligence  
+- 🐝 BeeCat (BCT) — Community-driven crypto  
 - 🛠️ AV AL — Automated logic systems  
 - 🎮 **Avxira Games** — Blockchain gaming redefined  
 - 🆘 [AV Help Desk](https://twitter.com/AvBabeHelpDesk) — Customer support platform
